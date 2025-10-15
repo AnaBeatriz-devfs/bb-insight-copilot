@@ -1,5 +1,6 @@
 import { LayoutDashboard, MessageSquare, Bell, Settings, BarChart3, Database } from "lucide-react";
 import { cn } from "@/lib/utils";
+import bbiabLogo from "@/assets/bbiab-logo.png";
 
 interface SidebarProps {
   activeTab: string;
@@ -19,9 +20,11 @@ export const Sidebar = ({ activeTab, onTabChange }: SidebarProps) => {
   return (
     <aside className="w-64 bg-sidebar border-r border-sidebar-border h-screen flex flex-col">
       <div className="p-6 border-b border-sidebar-border">
-        <h1 className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-          BBIAB
-        </h1>
+        <img 
+          src={bbiabLogo} 
+          alt="BBIAB - Plataforma de Inteligência Operacional" 
+          className="h-12 w-auto mb-2"
+        />
         <p className="text-xs text-sidebar-foreground mt-1">Inteligência Operacional</p>
       </div>
       
